@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="email_template_tw_invoice_winning" model="mail.template">
+        <field name="name">電子發票中獎通知</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="subject">恭喜！您的發票 {{ object.tw_einvoice_number }} 中獎了！</field>
+        <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px;">
+                <p>親愛的客戶 您好，</p>
+                <p>恭喜您！您於本店消費的電子發票 <strong><t t-out="object.tw_einvoice_number"/></strong> 幸運中獎！</p>
+                <p>請您攜帶身分證件，至便利商店多媒體機台列印中獎發票，或使用財政部兌獎 App 領獎。</p>
+                <br/>
+                <p>祝您購物愉快！</p>
+            </div>
+        </field>
+    </record>
+</odoo>
