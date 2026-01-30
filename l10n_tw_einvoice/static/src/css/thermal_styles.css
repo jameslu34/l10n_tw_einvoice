@@ -1,0 +1,12 @@
+@media print {
+    body {
+        background-color: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .page {
+        page-break-after: always;
+        width: 57mm !important;
+        overflow: hidden;
+    }
+}

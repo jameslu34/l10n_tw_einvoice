@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_einvoice_track,einvoice.track,model_einvoice_track,account.group_account_manager,1,1,1,1
+access_einvoice_track_user,einvoice.track user read,model_einvoice_track,account.group_account_user,1,0,0,0
+access_einvoice_lottery,einvoice.lottery,model_einvoice_lottery,account.group_account_manager,1,1,1,1
