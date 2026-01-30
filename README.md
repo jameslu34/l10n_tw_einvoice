@@ -33,7 +33,7 @@
 ### **方法二：Git Clone (推薦開發者)**
 
 cd /path/to/your/odoo/addons  
-git clone \[https://github.com/YourGithubID/odoo-l10n-tw-einvoice.git\](https://github.com/YourGithubID/odoo-l10n-tw-einvoice.git)  
+git clone \[https://github.com/jameslu34/l10n_tw_einvoice.git\](https://github.com/jameslu34/l10n_tw_einvoice.git)  
 sudo service odoo restart
 
 ## **⚙️ 設定說明 (Configuration)**
