@@ -1,0 +1,57 @@
+<odoo>
+    <record id="view_einvoice_track_form" model="ir.ui.view">
+        <field name="name">einvoice.track.form</field>
+        <field name="model">einvoice.track</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="track_code" placeholder="字軌 (如 AB)"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="year"/>
+                            <field name="period"/>
+                            <field name="type"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="start_no"/>
+                            <field name="end_no"/>
+                            <field name="current_no"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_einvoice_track_list" model="ir.ui.view">
+        <field name="name">einvoice.track.list</field>
+        <field name="model">einvoice.track</field>
+        <field name="arch" type="xml">
+            <list string="字軌管理">
+                <field name="year"/>
+                <field name="period"/>
+                <field name="track_code"/>
+                <field name="type"/>
+                <field name="current_no"/>
+                <field name="end_no"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_einvoice_track" model="ir.actions.act_window">
+        <field name="name">字軌管理</field>
+        <field name="res_model">einvoice.track</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_einvoice_track"
+              name="電子發票字軌"
+              parent="account.menu_finance_configuration"
+              action="action_einvoice_track"
+              sequence="100"/>
+</odoo>

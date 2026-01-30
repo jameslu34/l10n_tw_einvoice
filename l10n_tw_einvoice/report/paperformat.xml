@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="paperformat_tw_invoice_57mm" model="report.paperformat">
+            <field name="name">臺灣電子發票</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">90</field>
+            <field name="page_width">57</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">2</field>
+            <field name="margin_bottom">2</field>
+            <field name="margin_left">2</field>
+            <field name="margin_right">2</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">203</field>
+        </record>
+    </data>
+</odoo>

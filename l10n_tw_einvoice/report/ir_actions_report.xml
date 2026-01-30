@@ -1,0 +1,12 @@
+<odoo>
+    <record id="action_report_tw_invoice" model="ir.actions.report">
+        <field name="name">臺灣電子發票</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_tw_einvoice.report_invoice_taiwan_pro</field>
+        <field name="report_file">l10n_tw_einvoice.report_invoice_taiwan_pro</field>
+        <field name="print_report_name">'Invoice_%s' % (object.tw_einvoice_number or object.name)</field>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
